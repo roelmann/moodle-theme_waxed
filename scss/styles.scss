@@ -1,0 +1,14 @@
+[data-region="drawer"] {
+    background-color: rgba(100, 100, 100, 0.6)
+}
+header#page-header .page-header-headings h1 {
+    text-shadow: $brand-primary 0 0 4px;
+}
+.socials_wrapper {
+    margin:0 auto;
+    .socials {
+        text-align:center;
+        margin-bottom:0;
+    }
+}
+
