@@ -60,4 +60,4 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 // Additional theme options.
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
-$THEME->undeletableblocktypes = '';
+$THEME->requiredblocks = '';
