@@ -27,3 +27,7 @@ me through https://github.com/roelmann and see any testing and development being
 carried out on stagetwo prior to release here on theme_waxed.
 
 Richard
+
+CHANGELOG
+---------
+3.2.0.0.b       MDL-57232
