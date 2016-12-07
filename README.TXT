@@ -30,4 +30,5 @@ Richard
 
 CHANGELOG
 ---------
+3.2.0.0.c       MDL-56586
 3.2.0.0.b       MDL-57232
