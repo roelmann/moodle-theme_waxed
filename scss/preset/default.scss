@@ -938,8 +938,9 @@ $hr-border:                   $gray-lighter !default;
 // Bootswatch
 // -----------------------------------------------------
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic" !default;
-@import url($web-font-path);
+//$web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic" !default;
+//@import url($web-font-path);
+//@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
 
 // Navbar =====================================================================
 
@@ -1228,7 +1229,7 @@ a.list-group-item {
     &.active {
       background-color: $state-warning-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-warning-bg, 5%);
@@ -1239,7 +1240,7 @@ a.list-group-item {
     &.active {
       background-color: $state-danger-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-danger-bg, 5%);

@@ -165,7 +165,7 @@ $table-bg-hover:                darken($gray-light, 3%) !default;
 $table-bg-active:               $table-bg-hover !default;
 
 //** Border color for table and cell borders.
-$table-border-color:            $gray-light !default;  
+$table-border-color:            $gray-light !default;
 
 
 //== Buttons
@@ -798,7 +798,7 @@ $thumbnail-caption-padding:   9px !default;
 
 //== Wells
 //
-//## 
+//##
 
 $well-bg:                     $gray-light !default;
 $well-border:                 transparent !default;
@@ -938,8 +938,8 @@ $hr-border:                   lighten($gray-light, 5%) !default;
 // Bootswatch
 // -----------------------------------------------------
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700" !default;
-@import url($web-font-path);
+//$web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700" !default;
+//@import url($web-font-path);
 
 // Navbar =====================================================================
 
@@ -1245,7 +1245,7 @@ a.list-group-item {
     &.active {
       background-color: $state-warning-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-warning-bg, 5%);
@@ -1256,7 +1256,7 @@ a.list-group-item {
     &.active {
       background-color: $state-danger-bg;
     }
-    
+
     &.active:hover,
     &.active:focus {
       background-color: darken($state-danger-bg, 5%);
