@@ -57,6 +57,8 @@ $THEME->prescsscallback = 'theme_waxed_get_pre_scss';
 $THEME->extrascsscallback = 'theme_waxed_get_extra_scss';
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
+$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
+
 // Additional theme options.
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
