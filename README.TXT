@@ -30,6 +30,7 @@ Richard
 
 CHANGELOG
 ---------
+3.2.0.0.e       Adapt presets for changes in core (loses font link to googleapis)
 3.2.0.0.d       GitHub Issue #1 - Missing settings cog in activities
                                 - updated core_renderer
 3.2.0.0.c       MDL-56586
