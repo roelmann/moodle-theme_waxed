@@ -3,14 +3,14 @@ THEME_WAXED
 
 Theme_Waxed is a child theme of Moodle's new core theme Boost.
 
-It is built on Boostrap4 and Mustache templates.
+It is built on Bootstrap4 and Mustache templates.
 
 In addition to Boost's preset settings, Wax adds:
 
 1. Presets - presets added by ftp/ssh to the theme/scss/presets folder will
 be automatically added to the presets drop down, in addition to those uploaded
 via the user interface.
-2. Colours - additional brad colour pickers to fine tune the seleected presets,
+2. Colours - additional brand colour pickers to fine tune the selected presets,
 along with the standard pre/post raw scss custom settings.
 3. Content - a footnote setting to add standard content into the footer space
 4. Heading and images - add a page background image and a default heading background
@@ -30,6 +30,8 @@ Richard
 
 CHANGELOG
 ---------
+3.2.0.0.f       Change default preset to be based on Cerulean rather than Flatly (Issue#5)
+                
 3.2.0.0.e       Adapt presets for changes in core (loses font link to googleapis)
 3.2.0.0.d       GitHub Issue #1 - Missing settings cog in activities
                                 - updated core_renderer
