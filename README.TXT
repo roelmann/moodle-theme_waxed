@@ -31,6 +31,8 @@ Richard
 CHANGELOG
 ---------
 3.2.0.0.f       Change default preset to be based on Cerulean rather than Flatly (Issue#5)
+                Correct minor typos and suggestions found in plugin submission review
+                Add Travis.yml for automated testing
                 
 3.2.0.0.e       Adapt presets for changes in core (loses font link to googleapis)
 3.2.0.0.d       GitHub Issue #1 - Missing settings cog in activities

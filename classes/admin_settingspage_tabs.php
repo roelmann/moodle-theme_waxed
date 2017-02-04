@@ -47,10 +47,10 @@ class theme_waxed_admin_settingspage_tabs extends admin_settingpage {
 
     /**
      * Add a tab.
-     *      * @return array
-
      *
-   */    public function add($tab) {
+     * @return array
+     */
+    public function add($tab) {
         return $this->add_tab($tab);
     }
 
