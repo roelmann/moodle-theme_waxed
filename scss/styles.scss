@@ -10,7 +10,7 @@
  * Note: This breaks the rule above - cannot use opacity as that would affect
  * all child elements too, therefore uses a pale grey with alpha channel bkg. */
 [data-region="drawer"] {
-    background-color: rgba(100, 100, 100, 0.6)
+    background-color: rgba(100, 100, 100, 0.6);
 }
 
 /* Give headings in the header an outline shadow.
@@ -23,10 +23,10 @@ header#page-header .page-header-headings h1 {
 /* Centre the social icons in the footer.
  * -------------------------------------- */
 .socials_wrapper {
-    margin:0 auto;
+    margin: 0 auto;
     .socials {
-        text-align:center;
-        margin-bottom:0;
+        text-align: center;
+        margin-bottom: 0;
     }
 }
 
@@ -44,7 +44,7 @@ header#page-header .page-header-headings h1 {
 #page-header {
     .card {
         border-radius: $border-radius-lg;
-        border:3px solid $brand-primary;
+        border: 3px solid $brand-primary;
         box-shadow: 2px 2px 2px $brand-info;
 
     }
@@ -59,7 +59,7 @@ header#page-header .page-header-headings h1 {
  * This could be done by removing the footer from the layout/template in the
  * first place, but this is simpler in the first instance. */
 #page-login-index footer#page-footer {
-    display:none;
+    display: none;
 }
 
 /* Add border radius, border and box-shadow to login box.
@@ -73,7 +73,7 @@ header#page-header .page-header-headings h1 {
         border: $brand-primary solid 4px;
         box-shadow: 6px 6px 3px $brand-info;
         .card-title {
-            border-bottom:1px solid $brand-primary;
+            border-bottom: 1px solid $brand-primary;
         }
     }
 }
