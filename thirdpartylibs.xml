@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>scss/preset/cerulean.scss</location>
+        <name>Cerulean Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/cosmo.scss</location>
+        <name>Cosmo Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/cyborg.scss</location>
+        <name>Cyborg Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/darkly.scss</location>
+        <name>Darkly Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/flatly.scss</location>
+        <name>Flatly Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/journal.scss</location>
+        <name>Journal Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/lumen.scss</location>
+        <name>Lumen Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/paper.scss</location>
+        <name>Paper Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/plain.scss</location>
+        <name>Plain Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/readable.scss</location>
+        <name>Readable Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/sandstone.scss</location>
+        <name>Sandstone Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/simplex.scss</location>
+        <name>Simplex Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/slate.scss</location>
+        <name>Slate Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/spacelab.scss</location>
+        <name>Spacelab Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/superhero.scss</location>
+        <name>Superhero Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/united.scss</location>
+        <name>United Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>scss/preset/yeti.scss</location>
+        <name>Yeti Bootswatch preset</name>
+        <license>MIT</license>
+        <version>3.3.7</version>
+        <licenseversion></licenseversion>
+    </library>
+
+</libraries>
