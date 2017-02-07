@@ -1,0 +1,55 @@
+/* Bootswatch Preset fonts -
+ * This css file overrides the bug in reading the @import url font
+ * import lines in the SCSS pre-reader.
+ * Multiples are commented out to prevent multiple downloads but left
+ * in file for reference purposes.
+ * ------------------------------------------------------------------ */
+
+/* Cerulean fonts
+ * None declared. */
+
+/* Cosmo fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"); - See Lumen. */
+
+/* Cyborg fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Roboto:400,700"); - See Sandstone. */
+
+/* Darkly fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic"); - See Flatly. */
+
+/* Flatly fonts. */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic");
+/* 300 added for Superhero rather than send two import lines for the same font. */
+
+/* Journal fonts. */
+@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
+
+/* Lumen fonts. */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+
+/* Plain fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic"); - See Flatly. */
+
+/* Readable fonts. */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+/* Sandstone fonts. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+/* Simplex fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700"); - See Yeti. */
+
+/* Slate fonts
+ * None declared. */
+
+/* SpaceLab fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"); - See Yeti. */
+
+/* Superhero fonts
+ * @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700"); - See Flatly. */
+
+/* united fonts */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+
+/* Yeti fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");

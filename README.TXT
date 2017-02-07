@@ -30,6 +30,9 @@ Richard
 
 CHANGELOG
 ---------
+3.2.1.0a        Add thirdpartylibs.xml to cover preset bootswatch files
+                Add fonts.css to call fonts for presets due to bug in reading font imports
+
 3.2.0.0.f       Change default preset to be based on Cerulean rather than Flatly (Issue#5)
                 Correct minor typos and suggestions found in plugin submission review
                 Add Travis.yml for automated testing
