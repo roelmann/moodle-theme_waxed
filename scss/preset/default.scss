@@ -21,7 +21,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
+
 $bootstrap-sass-asset-helper: false !default;
+
 // Cerulean 3.3.7
 // Variables
 // --------------------------------------------------
@@ -40,11 +42,11 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $gray-lightest:          lighten($gray-lighter, 13.5%);
 
-$brand-primary:         #2FA4E7 !default;
-$brand-success:         #73A839 !default;
-$brand-info:            #033C73 !default;
-$brand-warning:         #DD5600 !default;
-$brand-danger:          #C71C22 !default;
+$brand-primary:         #2fa4e7 !default;
+$brand-success:         #73a839 !default;
+$brand-info:            #033c73 !default;
+$brand-warning:         #dd5600 !default;
+$brand-danger:          #c71c22 !default;
 
 
 //== Scaffolding
@@ -98,7 +100,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    $font-family-base !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.2 !default;
-$headings-color:          #317EAC !default;
+$headings-color:          #317eac !default;
 
 
 //== Iconography
@@ -272,7 +274,7 @@ $cursor-disabled:                not-allowed !default;
 //** Background for the dropdown menu.
 $dropdown-bg:                    #fff !default;
 //** Dropdown menu `border-color`.
-$dropdown-border:                rgba(0,0,0,.15) !default;
+$dropdown-border:                rgba(0, 0, 0, .15) !default;
 //** Dropdown menu `border-color` **for IE8**.
 $dropdown-fallback-border:       #ccc !default;
 //** Divider color for between dropdown items.
@@ -580,7 +582,7 @@ $popover-bg:                          #fff !default;
 //** Popover maximum width
 $popover-max-width:                   276px !default;
 //** Popover border color
-$popover-border-color:                rgba(0,0,0,.2) !default;
+$popover-border-color:                rgba(0, 0, 0, .2) !default;
 //** Popover fallback border color
 $popover-fallback-border-color:       #ccc !default;
 
@@ -638,7 +640,7 @@ $modal-title-line-height:     $line-height-base !default;
 //** Background color of modal content area
 $modal-content-bg:                             #fff !default;
 //** Modal content border color
-$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-border-color:                   rgba(0, 0, 0, .2) !default;
 //** Modal content border color **for IE8**
 $modal-content-fallback-border-color:          #999 !default;
 
@@ -843,7 +845,7 @@ $breadcrumb-separator:          "/" !default;
 //
 //##
 
-$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
+$carousel-text-shadow:                        0 1px 2px rgba(0, 0, 0, .6) !default;
 
 $carousel-control-color:                      #fff !default;
 $carousel-control-width:                      15% !default;
@@ -913,24 +915,31 @@ $hr-border:                   $gray-lighter !default;
 @mixin placeholder($text) {
     placeholder: $text;
 }
+
 @mixin box-shadow($text) {
     box-shadow: $text;
 }
+
 @mixin transform($transforms) {
     transform: $transforms;
 }
+
 @mixin rotate ($deg) {
     @include transform(rotate(#{$deg}deg));
 }
+
 @mixin scale($scale) {
     @include transform(scale($scale));
 }
+
 @mixin translate ($x, $y) {
     @include transform(translate($x, $y));
 }
+
 @mixin skew ($x, $y) {
     @include transform(skew(#{$x}deg, #{$y}deg));
 }
+
 @mixin transform-origin ($origin) {
     transform-origin: $origin;
 }
@@ -938,105 +947,105 @@ $hr-border:                   $gray-lighter !default;
 // Bootswatch
 // -----------------------------------------------------
 
-@mixin btn-shadow($color){
-  @include gradient-y-three-colors(lighten($color, 8%), $color, 60%, darken($color, 4%));
-  filter: none;
-  border-bottom: 1px solid darken($color, 10%);
+@mixin btn-shadow($color) {
+    @include gradient-y-three-colors(lighten($color, 8%), $color, 60%, darken($color, 4%));
+    filter: none;
+    border-bottom: 1px solid darken($color, 10%);
 }
 
 // Navbar =====================================================================
 
 .navbar {
-  &-default {
-    @include btn-shadow($navbar-light-bg);
-    filter: none;
-    @include box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
+    &-default {
+        @include btn-shadow($navbar-light-bg);
+        filter: none;
+        @include box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
 
-    .badge {
-      background-color: #fff;
-      color: $navbar-light-bg;
+        .badge {
+            background-color: #fff;
+            color: $navbar-light-bg;
+        }
     }
-  }
 
-  &-inverse {
-    @include gradient-y-three-colors(lighten($navbar-dark-bg, 8%), lighten($navbar-dark-bg, 4%), 60%, darken($navbar-dark-bg, 2%));
-    filter: none;
-    border-bottom: 1px solid darken($navbar-dark-bg, 10%);
+    &-inverse {
+        @include gradient-y-three-colors(lighten($navbar-dark-bg, 8%), lighten($navbar-dark-bg, 4%), 60%, darken($navbar-dark-bg, 2%));
+        filter: none;
+        border-bottom: 1px solid darken($navbar-dark-bg, 10%);
 
-    .badge {
-      background-color: #fff;
-      color: $navbar-dark-bg;
+        .badge {
+            background-color: #fff;
+            color: $navbar-dark-bg;
+        }
     }
-  }
 
-  .navbar-nav > li > a,
-  &-brand {
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  }
+    .navbar-nav > li > a,
+    &-brand {
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
 }
 
 @media (max-width: $grid-float-breakpoint-max) {
 
-  .navbar {
+    .navbar {
 
-    .dropdown-header {
-      color: #fff;
-    }
+        .dropdown-header {
+            color: #fff;
+        }
 
-    .dropdown-menu {
-      a {
-        color: #fff;
-      }
+        .dropdown-menu {
+            a {
+                color: #fff;
+            }
+        }
     }
-  }
 }
 
 // Buttons ====================================================================
 
 .btn {
 
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 
-  .caret {
-    border-top-color: #fff;
-  }
+    .caret {
+        border-top-color: #fff;
+    }
 }
 
 .btn-default {
 
-  @include btn-shadow($btn-default-bg);
+    @include btn-shadow($btn-default-bg);
 
-  &:hover {
-    color: $btn-default-color;
-  }
+    &:hover {
+        color: $btn-default-color;
+    }
 
-  .caret {
-    border-top-color: $text-color;
-  }
+    .caret {
+        border-top-color: $text-color;
+    }
 }
 
 .btn-default {
-  @include btn-shadow($btn-default-bg);
+    @include btn-shadow($btn-default-bg);
 }
 
 .btn-primary {
-  @include btn-shadow($btn-primary-bg);
+    @include btn-shadow($btn-primary-bg);
 }
 
 .btn-success {
-  @include btn-shadow($btn-success-bg);
+    @include btn-shadow($btn-success-bg);
 }
 
 .btn-info {
-  @include btn-shadow($btn-info-bg);
+    @include btn-shadow($btn-info-bg);
 }
 
 .btn-warning {
-  @include btn-shadow($btn-warning-bg);
+    @include btn-shadow($btn-warning-bg);
 }
 
 .btn-danger {
-  @include btn-shadow($btn-danger-bg);
+    @include btn-shadow($btn-danger-bg);
 }
 
 // Typography =================================================================
@@ -1059,8 +1068,8 @@ $hr-border:                   $gray-lighter !default;
 .card-danger,
 .card-info {
 
-  .card-heading,
-  .card-title {
-    color: #fff;
-  }
+    .card-heading,
+    .card-title {
+        color: #fff;
+    }
 }
