@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 $page = new admin_settingpage('theme_waxed_colours', get_string('colours_settings', 'theme_waxed'));
 
 // Raw SCSS to include before the content.
-$setting = new admin_setting_configtextarea('theme_waxed/scsspre',
+$setting = new admin_setting_scsscode('theme_waxed/scsspre',
     get_string('rawscsspre', 'theme_waxed'), get_string('rawscsspre_desc', 'theme_waxed'), '', PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
@@ -82,7 +82,7 @@ $page->add($setting);
 
 
 // Raw SCSS to include after the content.
-$setting = new admin_setting_configtextarea('theme_waxed/scss', get_string('rawscss', 'theme_waxed'),
+$setting = new admin_setting_scsscode('theme_waxed/scss', get_string('rawscss', 'theme_waxed'),
     get_string('rawscss_desc', 'theme_waxed'), '', PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
