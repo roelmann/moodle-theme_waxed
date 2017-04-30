@@ -17,7 +17,7 @@
 /**
  * Course renderer.
  *
- * @package    theme_noanme
+ * @package    theme_waxed
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,50 +32,10 @@ require_once($CFG->dirroot . '/course/renderer.php');
 /**
  * Course renderer class.
  *
- * @package    theme_noanme
- * @copyright  2016 Frédéric Massart - FMCorz.net
+ * @package    theme_waxed
+ * @copyright  2017 Richard Oelmann
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class course_renderer extends \core_course_renderer {
-
-    /**
-     * Renders html to display a course search form.
-     *
-     * @param string $value default value to populate the search field
-     * @param string $format display format - 'plain' (default), 'short' or 'navbar'
-     * @return string
-     */
-    public function course_search_form($value = '', $format = 'plain') {
-        static $count = 0;
-        $formid = 'coursesearch';
-        if ((++$count) > 1) {
-            $formid .= $count;
-        }
-
-        switch ($format) {
-            case 'navbar' :
-                $formid = 'coursesearchnavbar';
-                $inputid = 'navsearchbox';
-                $inputsize = 20;
-                break;
-            case 'short' :
-                $inputid = 'shortsearchbox';
-                $inputsize = 12;
-                break;
-            default :
-                $inputid = 'coursesearchbox';
-                $inputsize = 30;
-        }
-
-        $data = (object) [
-            'searchurl' => (new moodle_url('/course/search.php'))->out(false),
-            'id' => $formid,
-            'inputid' => $inputid,
-            'inputsize' => $inputsize,
-            'value' => $value
-        ];
-
-        return $this->render_from_template('theme_boost/course_search_form', $data);
-    }
-
+class course_renderer extends \theme_boost\output\core\course_renderer {
+    // Error message when this class is not included, but even if empty it works.
 }

@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die();
  * @param theme_config $theme The theme config object.
  */
 function theme_waxed_css_tree_post_processor($tree, $theme) {
-    $prefixer = new theme_waxed\autoprefixer($tree);
+    $prefixer = new theme_boost\autoprefixer($tree);
     $prefixer->prefix();
 }
 
@@ -49,6 +49,7 @@ function theme_waxed_get_main_scss_content($theme) {
     $filename = !empty($theme->settings->preset) ? $theme->settings->preset : null;
     $fs = get_file_storage();
 
+    // This section reads any scss preset files added directly to the theme via ftp.
     $context = context_system::instance();
     $iterator = new DirectoryIterator($CFG->dirroot . '/theme/waxed/scss/preset/');
     $presetisset = '';

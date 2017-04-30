@@ -15,11 +15,11 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost/columns2
+    @template theme_waxed/columns2
 
     Admin time setting template.
 
-    Boost 2 column layout template.
+    Waxed 2 column layout template.
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -87,7 +87,7 @@
                     </div>
                 </section>
                 {{#hasblocks}}
-                <section data-region="blocks-column">
+                <section data-region="blocks-column" class="hidden-print">
                     {{{ sidepreblocks }}}
                 </section>
                 {{/hasblocks}}
