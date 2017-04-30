@@ -32,6 +32,7 @@ CHANGELOG
 ---------
 3.3.0.0         Change setting to reflect new scsscode setting type
                 Changes to default preset/default background images
+                Replace fontawesome CDN with Moodle core use of FA
 3.2.2.0         Tidy up all the classes etc to remove the ones not edited
                 in Waxed
                 Code tidy to allow further use as a development base
