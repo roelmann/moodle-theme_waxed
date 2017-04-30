@@ -19,7 +19,7 @@
  *
  * @package    theme_waxed
  * @copyright  2016 Richard Oelmann
- * @credits    theme_boost - MoodleHQ
+ * @copyright  theme_boost - MoodleHQ
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

@@ -184,8 +184,6 @@ $btn-secondary-color: $btn-default-color;
 $btn-secondary-bg: $btn-default-bg;
 $btn-secondary-border: $btn-default-border;
 
-
-
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
@@ -912,10 +910,6 @@ $hr-border:                   $gray-lighter !default;
 
 @import "moodle";
 
-@mixin placeholder($text) {
-    placeholder: $text;
-}
-
 @mixin box-shadow($text) {
     box-shadow: $text;
 }
@@ -968,7 +962,8 @@ $hr-border:                   $gray-lighter !default;
     }
 
     &-inverse {
-        @include gradient-y-three-colors(lighten($navbar-dark-bg, 8%), lighten($navbar-dark-bg, 4%), 60%, darken($navbar-dark-bg, 2%));
+        @include gradient-y-three-colors(lighten($navbar-dark-bg, 8%),
+        lighten($navbar-dark-bg, 4%), 60%, darken($navbar-dark-bg, 2%));
         filter: none;
         border-bottom: 1px solid darken($navbar-dark-bg, 10%);
 

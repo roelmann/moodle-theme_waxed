@@ -32,7 +32,7 @@ require_once($CFG->dirroot . '/' . $CFG->admin . '/renderer.php');
 /**
  * Admin renderer class.
  *
- * @package    theme_noanme
+ * @package    theme_waxed
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

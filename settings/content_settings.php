@@ -17,10 +17,10 @@
 /**
  * Heading and course images settings page file.
  *
- * @packagetheme_waxed
+ * @package    theme_waxed
  * @copyright  2016 Richard Oelmann
- * @creditstheme_boost - MoodleHQ
- * @licensehttp://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright  theme_boost - MoodleHQ
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
