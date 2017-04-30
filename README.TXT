@@ -30,13 +30,15 @@ Richard
 
 CHANGELOG
 ---------
+3.2.2.0         Tidy up all the classes etc to remove the ones not edited
+                in Waxed
+                Code tidy to allow further use as a development base
 3.2.1.0a        Add thirdpartylibs.xml to cover preset bootswatch files
                 Add fonts.css to call fonts for presets due to bug in reading font imports
-
 3.2.0.0.f       Change default preset to be based on Cerulean rather than Flatly (Issue#5)
                 Correct minor typos and suggestions found in plugin submission review
                 Add Travis.yml for automated testing
-                
+
 3.2.0.0.e       Adapt presets for changes in core (loses font link to googleapis)
 3.2.0.0.d       GitHub Issue #1 - Missing settings cog in activities
                                 - updated core_renderer

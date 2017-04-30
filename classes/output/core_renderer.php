@@ -136,8 +136,8 @@ class core_renderer extends \theme_boost\output\core_renderer {
     }
 
 
-/* Waxed specific additions to core_renderer.
- * ------------------------------------------ */
+    /* Waxed specific additions to core_renderer.
+     * ------------------------------------------ */
     public function social_icons() {
         global $PAGE;
 
