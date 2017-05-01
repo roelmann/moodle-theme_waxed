@@ -30,6 +30,7 @@ Richard
 
 CHANGELOG
 ---------
+3.3.0.1         Add default images to body, page-header and login page
 3.3.0.0         Change setting to reflect new scsscode setting type
                 Changes to default preset/default background images
                 Replace fontawesome CDN with Moodle core use of FA
