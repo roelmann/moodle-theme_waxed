@@ -112,7 +112,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         // If course image display it in separate div to allow css styling of inline style.
         if ($courseimage) {
             $html .= html_writer::start_div('withimage', array(
-                'style' => 'background: url("'.$courseimage.'");'));
+                'style' => 'background-image: url("'.$courseimage.'");'));
         }
 
         $html .= html_writer::start_div('card-block');
