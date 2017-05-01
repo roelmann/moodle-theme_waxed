@@ -1,6 +1,6 @@
 /* Theme styles.
  * =============
- * These are the separate styles for theme_stagetwo. They should not include
+ * These are the separate styles for theme_waxed. They should not include
  * colours or any other variable that would be controlled by the theme preset
  * or settings.
  */
@@ -10,7 +10,7 @@
  * Note: This breaks the rule above - cannot use opacity as that would affect
  * all child elements too, therefore uses a pale grey with alpha channel bkg. */
 [data-region="drawer"] {
-    background-color: rgba(100, 100, 100, 0.6);
+    background-color: rgba(100, 100, 100, 0.3);
 }
 
 /* Give headings in the header an outline shadow.
@@ -83,6 +83,7 @@ header#page-header .page-header-headings h1 {
 body {
     background-size: 100% 100%;
 }
+header#page-header .card,
 header#page-header .card .withimage {
     background-size: 100% 100%;
     width: 100%;

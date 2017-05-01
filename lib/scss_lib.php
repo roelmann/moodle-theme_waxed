@@ -117,18 +117,24 @@ function theme_waxed_get_pre_scss($theme) {
     if (isset($headerbg)) {
         // Add a fade in transition to avoid the flicker on course headers ***.
         $prescss .= 'header#page-header .card {background-image: url("'.$headerbg.'"); background-size:100% 100%;}';
+    } else {
+        $prescss .= 'header#page-header .card {background-image: url([[pix:theme|banner_transparent]]); background-size:100% 100%;}';
     }
 
     // Set the background image for the page.
     $pagebg = $theme->setting_file_url('backgroundimage', 'backgroundimage');
     if (isset($pagebg)) {
         $prescss .= 'body {background-image: url("'.$pagebg.'"); background-size:100% 100%;}';
+    } else {
+        $prescss .= 'body {background-image: url([[pix:theme|background]]); background-size:100% 100%;}';
     }
 
     // Set the background image for the login page.
     $loginbg = $theme->setting_file_url('loginimage', 'loginimage');
     if (isset($loginbg)) {
         $prescss .= 'body#page-login-index {background-image: url("'.$loginbg.'"); background-size:100% 100%;}';
+    } else {
+        $prescss .= 'body#page-login-index {background-image: url([[pix:theme|background2]]); background-size:100% 100%;}';
     }
 
     return $prescss;
