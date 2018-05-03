@@ -24,23 +24,45 @@
 /* Journal fonts. */
 @import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
 
+/* Litera fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Raleway:400,700"); - See Readable. */
+
 /* Lumen fonts. */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
 
+/* Lux fonts. */
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600");
+
+/* Materia fonts.
+ * @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"); - See Sandstone. */
+ 
+/* Minty fonts. */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 /* Plain fonts.
  * @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic"); - See Flatly. */
+ 
+/* Pulse fonts
+ * None declared. */
 
 /* Readable fonts. */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 
 /* Sandstone fonts. */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
 /* Simplex fonts.
  * @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700"); - See Yeti. */
+ 
+/* Sketchy fonts. */
+@import url("https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch");
 
-/* Slate fonts
+/* Slate fonts.
  * None declared. */
+ 
+/* Solar fonts. */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
 
 /* SpaceLab fonts.
  * @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"); - See Yeti. */
