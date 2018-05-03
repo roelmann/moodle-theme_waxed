@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2017040101;
-$plugin->release  = 'v3.3.0.1';
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->requires  = 2017042800;
+$plugin->version   = 2018050301;
+$plugin->release  = 'v3.5.0.1';
+$plugin->maturity  = MATURITY_BETA;
+$plugin->requires  = 2018042500;
 $plugin->component = 'theme_waxed';
 $plugin->dependencies = array(
-    'theme_boost'  => 2016120500,
+    'theme_boost'  => 2017111300,
 );

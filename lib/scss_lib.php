@@ -72,6 +72,8 @@ function theme_waxed_get_main_scss_content($theme) {
         }
     }
 
+    $scss .= file_get_contents($CFG->dirroot . '/theme/waxed/scss/styles.scss');
+
     return $scss;
 }
 

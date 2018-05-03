@@ -104,42 +104,16 @@ class core_renderer extends \theme_boost\output\core_renderer {
             }
         }
 
-        // Create html for header.
-        $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'row'));
-        $html .= html_writer::start_div('col-xs-12 p-a-1');
-        $html .= html_writer::start_div('card');
-
-        // If course image display it in separate div to allow css styling of inline style.
-        if ($courseimage) {
-            $html .= html_writer::start_div('withimage', array(
-                'style' => 'background-image: url("'.$courseimage.'");background-size: 100% 100%;'));
-        }
-
-        $html .= html_writer::start_div('card-block');
-        $html .= html_writer::div($this->context_header_settings_menu(), 'pull-xs-right context-header-settings-menu');
-        $html .= html_writer::start_div('pull-xs-left');
-        $html .= $this->context_header();
-        $html .= html_writer::end_div();
-        $pageheadingbutton = $this->page_heading_button();
-        if (empty($PAGE->layout_options['nonavbar'])) {
-            $html .= html_writer::start_div('clearfix w-100 pull-xs-left', array('id' => 'page-navbar'));
-            $html .= html_writer::tag('div', $this->navbar(), array('class' => 'breadcrumb-nav'));
-            $html .= html_writer::div($pageheadingbutton, 'breadcrumb-button pull-xs-right');
-            $html .= html_writer::end_div();
-        } else if ($pageheadingbutton) {
-            $html .= html_writer::div($pageheadingbutton, 'breadcrumb-button nonavbar pull-xs-right');
-        }
-        $html .= html_writer::tag('div', $this->course_header(), array('id' => 'course-header'));
-        $html .= html_writer::end_div(); // End card-block.
-
-        if ($courseimage) {
-            $html .= html_writer::end_div(); // End withimage inline style div.
-        }
-
-        $html .= html_writer::end_div(); // End card.
-        $html .= html_writer::end_div(); // End col-xs-12 p-a-1.
-        $html .= html_writer::end_tag('header');
-        return $html;
+		$header = new stdClass();
+		$header->image = $courseimage;
+        $header->settingsmenu = $this->context_header_settings_menu();
+        $header->contextheader = $this->context_header();
+        $header->hasnavbar = empty($PAGE->layout_options['nonavbar']);
+        $header->navbar = $this->navbar();
+        $header->pageheadingbutton = $this->page_heading_button();
+        $header->courseheader = $this->course_header();
+        
+        return $this->render_from_template('theme_waxed/header', $header);
     }
 
 
