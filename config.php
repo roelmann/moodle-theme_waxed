@@ -40,7 +40,7 @@ $THEME->parents = ['boost'];
  * to generate dynamically from the scss presets and settings and is not
  * used by Moodle's default editor (Atto).
  */
-$THEME->sheets = ['fonts'];
+// $THEME->sheets = ['fonts'];
 $THEME->editor_sheets = [''];
 
 // Call main theme scss - including the selected preset.
