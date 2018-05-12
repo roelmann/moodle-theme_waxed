@@ -31,6 +31,7 @@ Richard
 CHANGELOG
 ---------
 3.5.0.3         Add Privacy Api - Null Provider
+                Remove PHP5 from Travis checks
 3.5.0.2         Update for Travis code checks.
 3.5.0.0         Rework Waxed theme presets for Moodle3.5 and Boost changes for BS4Stable
 3.3.0.1         Add default images to body, page-header and login page
