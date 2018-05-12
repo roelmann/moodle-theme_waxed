@@ -30,7 +30,7 @@ $string['choosereadme'] = 'Waxed is a modern highly-customisable theme. It is bu
 $string['configtitle'] = 'Waxed';
 $string['pluginname'] = 'waxed';
 $string['region-side-pre'] = 'Right';
-
+$string['privacy:metadata'] = 'The Waxed theme does not store any individual user data.';
 
 $string['generalsettings'] = 'General settings';
 $string['advancedsettings'] = 'Advanced settings';
