@@ -17,7 +17,7 @@
  * ----------------------------------------------
  * This ensures they will stand out whatever the background image used. */
 header#page-header .page-header-headings h1 {
-    text-shadow: $brand-primary 0 0 4px;
+    text-shadow: $primary 0 0 4px;
 }
 
 /* Centre the social icons in the footer.
@@ -45,8 +45,8 @@ header#page-header .page-header-headings h1 {
 #page-header {
     .card {
         border-radius: $border-radius-lg;
-        border: 3px solid $brand-primary;
-        box-shadow: 2px 2px 2px $brand-info;
+        border: 3px solid $primary;
+        box-shadow: 2px 2px 2px $info;
 
     }
 }
@@ -71,10 +71,10 @@ header#page-header .page-header-headings h1 {
         padding-top: 3rem;
         padding-bottom: 3rem;
         border-radius: $border-radius-lg * 2;
-        border: $brand-primary solid 4px;
+        border: $primary solid 4px;
         box-shadow: 6px 6px 3px $brand-info;
         .card-title {
-            border-bottom: 1px solid $brand-primary;
+            border-bottom: 1px solid $primary;
         }
     }
 }
