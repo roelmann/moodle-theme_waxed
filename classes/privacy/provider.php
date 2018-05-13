@@ -15,19 +15,28 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Language file.
+ * Privacy Subsystem for theme_waxed.
  *
  * @package    theme_waxed
  * @copyright  2018 Richard Oelmann
- * @copyright  theme_boost - MoodleHQ
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace theme_waxed\privacy;
+defined('MOODLE_INTERNAL') || die();
 
+/**
+ * Privacy Subsystem for theme_waxed implementing null_provider.
+ *
+ * @copyright  2018 onwards Richard Oelmann
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class provider implements
     // This plugin does not store any personal user data.
     \core_privacy\local\metadata\null_provider {
+
+    // To provide php 5.6 (33_STABLE) and up support.
+    use \core_privacy\local\legacy_polyfill;
 
     /**
      * Get the language string identifier with the component's language
@@ -35,7 +44,7 @@ class provider implements
      *
      * @return  string
      */
-    public static function get_reason() : string {
+    public static function _get_reason() {
         return 'privacy:metadata';
     }
 }
