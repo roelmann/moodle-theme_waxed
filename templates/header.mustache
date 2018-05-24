@@ -20,10 +20,10 @@
 <header id="page-header" class="row">
     <div class="col-12 pt-3 pb-3">
         <div class="card">
+            {{#image}}
+                <div class='withimage' style='background-image:url("{{{image}}}");background-size:100% 100%'>
+            {{/image}}   
             <div class="card-body">
-                {{#image}}
-                <div class='withimage' style='background-image:url("{{{image}}}"};background-size:100% 100%'>
-                {{/image}}   
                 <div class="d-flex">
                     <div class="mr-auto">
                     {{{contextheader}}}
