@@ -30,6 +30,7 @@ Richard
 
 CHANGELOG
 ---------
+                Migrated to GitLab as central repository - GitHub maintained as mirror
 3.5.1.0         Make stabe for Moodle3.5
 3.5.0.3         Add Privacy Api - Null Provider
                 Remove PHP5 from Travis checks
