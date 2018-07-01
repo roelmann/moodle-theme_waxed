@@ -30,6 +30,8 @@ Richard
 
 CHANGELOG
 ---------
+3.5.1.1         Fixed course image bug
+                Fixed empty Styles folder in moodle database version
                 Migrated to GitLab as central repository - GitHub maintained as mirror
 3.5.1.0         Make stabe for Moodle3.5
 3.5.0.3         Add Privacy Api - Null Provider
