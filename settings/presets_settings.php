@@ -31,7 +31,7 @@ $page = new admin_settingpage('theme_waxed_presets', get_string('presets_setting
 $name = 'theme_waxed/preset';
 $title = get_string('preset', 'theme_waxed');
 $description = get_string('preset_desc', 'theme_waxed');
-$presetchoices = '';
+$presetchoices = array();
 // Add preset files from theme preset folder.
 $iterator = new DirectoryIterator($CFG->dirroot . '/theme/waxed/scss/preset/');
 foreach ($iterator as $presetfile) {
