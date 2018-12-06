@@ -30,6 +30,8 @@ Richard
 
 CHANGELOG
 ---------
+3.6.0.0         Fixed PHP7 bug re Array definition in preset settings
+                Updated layout templates for Moodle3.6 changes to Boost parent theme
 3.5.1.1         Fixed course image bug
                 Fixed empty Styles folder in moodle database version
                 Migrated to GitLab as central repository - GitHub maintained as mirror
