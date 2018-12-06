@@ -56,12 +56,12 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{>theme_boost/navbar}}
+    {{> theme_boost/navbar }}
 
     <div id="page" class="container-fluid">
         {{{ output.full_header }}}
 
-        <div id="page-content" class="row">
+        <div id="page-content" class="row pb-3">
             <div id="region-main-box" class="col-12">
                 {{#hasregionmainsettingsmenu}}
                 <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
@@ -69,54 +69,51 @@
                 </div>
                 {{/hasregionmainsettingsmenu}}
                 <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}}>
-                    <div class="card">
-                        <div class="card-body">
-                            {{#hasregionmainsettingsmenu}}
-                                <div class="region_main_settings_menu_proxy"></div>
-                            {{/hasregionmainsettingsmenu}}
-                            {{{ output.course_content_header }}}
-                            {{{ output.main_content }}}
-                            {{{ output.activity_navigation }}}
-                            {{{ output.course_content_footer }}}
-                        </div>
-                    </div>
+
+                    {{#hasregionmainsettingsmenu}}
+                        <div class="region_main_settings_menu_proxy"></div>
+                    {{/hasregionmainsettingsmenu}}
+                    {{{ output.course_content_header }}}
+                    {{{ output.main_content }}}
+                    {{{ output.activity_navigation }}}
+                    {{{ output.course_content_footer }}}
+
                 </section>
                 {{#hasblocks}}
-                <section data-region="blocks-column" class="d-print-none hidden-print">
+                <section data-region="blocks-column" class="d-print-none">
                     {{{ sidepreblocks }}}
                 </section>
                 {{/hasblocks}}
             </div>
         </div>
     </div>
+    {{{ output.standard_after_main_region_html }}}
     {{> theme_boost/nav-drawer }}
-</div>
 
-<footer id="page-footer" class="py-3 bg-dark text-light">
-    <div class="container">
-        <div id="course-footer">
-            {{{ output.course_footer }}}
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer">{{{ output.course_footer }}}</div>
+            {{{ output.footnote }}}
+            {{# output.page_doc_link }}
+                <p class="helplink">{{{ output.page_doc_link }}}</p>
+            {{/ output.page_doc_link }}
+
+            {{{ output.login_info }}}
+            <div class="tool_usertours-resettourcontainer"></div>
+            {{{ output.home_link }}}
+            <nav class="nav navbar-nav d-md-none">
+                {{# output.custom_menu_flat }}
+                    <ul class="list-unstyled pt-3">
+                        {{> theme_boost/custom_menu_footer }}
+                    </ul>
+                {{/ output.custom_menu_flat }}
+            </nav>
+            {{{ output.standard_footer_html }}}
+            {{{ output.standard_end_of_body_html }}}
         </div>
-        {{{ output.footnote }}}
-        {{# output.page_doc_link }}
-            <p class="helplink">{{{ output.page_doc_link }}}</p>
-        {{/ output.page_doc_link }}
-
-        {{{ output.login_info }}}
-        {{{ output.home_link }}}
-        <nav class="nav navbar-nav hidden-lg-up">
-            {{# output.custom_menu_flat }}
-                <ul class="list-unstyled pt-3">
-                    {{> theme_boost/custom_menu_footer }}
-                </ul>
-            {{/ output.custom_menu_flat }}
-        </nav>
-        {{{ output.standard_footer_html }}}
-        {{{ output.standard_end_of_body_html }}}
-    </div>
-{{{ output.social_icons }}}
-</footer>
-
+    {{{ output.social_icons }}}
+    </footer>
+</div>
 
 </body>
 </html>
