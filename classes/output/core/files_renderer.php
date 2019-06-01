@@ -38,6 +38,6 @@ require_once($CFG->dirroot . '/files/renderer.php');
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-class files_renderer extends \theme_boost\output\core\files_renderer {
+//class files_renderer extends \theme_boost\output\core\files_renderer {
     // Error message when this class is not included, but even if empty it works.
-}
+//}

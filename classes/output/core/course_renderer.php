@@ -37,6 +37,6 @@ require_once($CFG->dirroot . '/course/renderer.php');
  * @copyright  2017 Richard Oelmann
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class course_renderer extends \theme_boost\output\core\course_renderer {
+//class course_renderer extends \theme_boost\output\core\course_renderer {
     // Error message when this class is not included, but even if empty it works.
-}
+//}

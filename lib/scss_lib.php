@@ -48,6 +48,7 @@ function theme_waxed_get_main_scss_content($theme) {
     $scss = '';
 
     $scss .= file_get_contents($CFG->dirroot . '/theme/waxed/scss/defaultvariables.scss');
+    $scss .= file_get_contents($CFG->dirroot . '/theme/waxed/scss/prestyles.scss');
 
     $filename = !empty($theme->settings->preset) ? $theme->settings->preset : null;
     $fs = get_file_storage();
@@ -75,7 +76,7 @@ function theme_waxed_get_main_scss_content($theme) {
         }
     }
 
-    $scss .= file_get_contents($CFG->dirroot . '/theme/waxed/scss/styles.scss');
+    $scss .= file_get_contents($CFG->dirroot . '/theme/waxed/scss/poststyles.scss');
 
     return $scss;
 }
@@ -126,7 +127,7 @@ function theme_waxed_get_pre_scss($theme) {
             background-size:100% 100%;}';
     } else {
         $prescss .= 'header#page-header .card {
-            background-image: url([[pix:theme|banner_transparent]]);
+            background-image: url([[pix:theme|transparent]]);
             background-size:100% 100%;}';
     }
 
@@ -135,7 +136,7 @@ function theme_waxed_get_pre_scss($theme) {
     if (isset($pagebg)) {
         $prescss .= 'body {background-image: url("'.$pagebg.'"); background-size:100% 100%;}';
     } else {
-        $prescss .= 'body {background-image: url([[pix:theme|background]]); background-size:100% 100%;}';
+        $prescss .= 'body {background-image: url([[pix:theme|transparent]]); background-size:100% 100%;}';
     }
 
     // Set the background image for the login page.
@@ -143,7 +144,7 @@ function theme_waxed_get_pre_scss($theme) {
     if (isset($loginbg)) {
         $prescss .= 'body#page-login-index {background-image: url("'.$loginbg.'"); background-size:100% 100%;}';
     } else {
-        $prescss .= 'body#page-login-index {background-image: url([[pix:theme|background2]]); background-size:100% 100%;}';
+        $prescss .= 'body#page-login-index {background-image: url([[pix:theme|transparent]]); background-size:100% 100%;}';
     }
 
     return $prescss;
