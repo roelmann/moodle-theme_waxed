@@ -23,6 +23,7 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
+global $DB;
 
 user_preference_allow_ajax_update('drawer-open-nav', PARAM_ALPHA);
 require_once($CFG->libdir . '/behat/lib.php');
