@@ -39,7 +39,7 @@ if ($navdraweropen) {
 }
 
 // This section assumes a custom course field set up as a drop down menu with colourscheme options (Mdl3.7+).
-// eg blue, green, pink, tan. It then adds a body class 'colsch_blue', 'colsch_green', etc.
+// eg none, blue, green, pink, tan. It then adds a body class 'colsch_2', 'colsch_3', etc. (numeric value from dropdown order)
 if ($DB->record_exists('customfield_field', array('shortname' => 'colourscheme'))) {
     $cff = $DB->get_record('customfield_field', array('shortname' => 'colourscheme'));
     if ($DB->record_exists('customfield_data', array('fieldid' => $cff->id, 'instanceid' => $COURSE->id))) {
