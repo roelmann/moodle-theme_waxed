@@ -3,10 +3,6 @@ image: moodlehq/moodle-php-apache:7.3
 services:
  - mysql:latest
 
-cache:
- paths:
- - $HOME/.composer/cache
-
 variables:
  MOODLE_BRANCH: "master"
  DB: "mysqli"
@@ -15,6 +11,19 @@ variables:
 
 before_script:
  - cd $CI_PROJECT_DIR/..
+
+  # Install php-gd (and others)
+ - echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+ - echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
+ - apt-get install -y git libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng12-dev libicu-dev g++ mysql-client oracle-java8-installer oracle-java8-set-default
+ - docker-php-ext-install -j$(nproc) iconv mcrypt intl zip mysqli
+ - docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
+ - docker-php-ext-install -j$(nproc) gd
+ # Install phpunit.
+ - curl -o /usr/local/bin/phpunit https://phar.phpunit.de/phpunit.phar
+ - chmod +x /usr/local/bin/phpunit
+ - cd ../..
+ 
  - curl -sS https://getcomposer.org/installer | php
  - mv composer.phar /usr/local/bin/composer
  - composer create-project -n --no-dev moodlerooms/moodle-plugin-ci ci ^1
