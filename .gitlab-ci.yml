@@ -1,10 +1,6 @@
 services:
  - mysql:latest
 
-cache:
- paths:
- - $HOME/.composer/cache
-
 variables:
  DB: "mysqli"
  MYSQL_ROOT_PASSWORD: "superrootpass"
