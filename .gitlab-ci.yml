@@ -11,8 +11,14 @@ variables:
 
 before_script:
  - cd $CI_PROJECT_DIR/..
+ - echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" > /etc/apt/sources.list.d/webupd8team-java.list
+ - echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" >> /etc/apt/sources.list.d/webupd8team-java.list
+ - apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+ - apt-get update
 
   # Install php-gd (and others)
+  - echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+ - echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
  - echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
  - echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
  - apt-get install -y git libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng12-dev libicu-dev g++ mysql-client oracle-java8-installer oracle-java8-set-default
@@ -23,16 +29,24 @@ before_script:
  - curl -o /usr/local/bin/phpunit https://phar.phpunit.de/phpunit.phar
  - chmod +x /usr/local/bin/phpunit
  - cd ../..
- 
- - curl -sS https://getcomposer.org/installer | php
- - mv composer.phar /usr/local/bin/composer
- - composer create-project -n --no-dev moodlerooms/moodle-plugin-ci ci ^1
- - export PATH="$(cd ci/bin; pwd):$(cd ci/vendor/bin; pwd):$PATH"
- - chmod u+x ci/bin/moodle-plugin-ci
- - chmod u+x ci/bin/*
- - umask u+x
- - moodle-plugin-ci install --db-user=root --db-pass=superrootpass --db-host=mysql -vvv
+
+.job_template: &job_definition
+ script:
+  - EXIT_STATUS=0
+  - moodle-plugin-ci phplint
+  - moodle-plugin-ci phpcpd
+  - moodle-plugin-ci phpmd
+  - moodle-plugin-ci codechecker
+  - moodle-plugin-ci savepoints
+  - moodle-plugin-ci mustache
+  - moodle-plugin-ci grunt
+  - moodle-plugin-ci validate
+  - moodle-plugin-ci phpunit
+  - moodle-plugin-ci behat
+  - exit $EXIT_STATUS
 
 job1:
- script:
- - moodle-plugin-ci phplint ; moodle-plugin-ci phpcpd ; moodle-plugin-ci phpmd ; moodle-plugin-ci codechecker ; moodle-plugin-ci csslint ; moodle-plugin-ci shifter ; moodle-plugin-ci jshint ; moodle-plugin-ci validate ; moodle-plugin-ci phpunit ; moodle-plugin-ci behat
+ <<: *job_definition
+ image: php:7.3
+ variables:
+  MOODLE_BRANCH: "master"
