@@ -1,4 +1,4 @@
-image: moodlehq/moodle-php-apache:7.0
+image: moodlehq/moodle-php-apache:7.3
 
 services:
  - mysql:latest
