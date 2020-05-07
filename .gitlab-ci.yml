@@ -14,7 +14,6 @@ variables:
  TRAVIS_BUILD_DIR: "$CI_PROJECT_DIR"
 
 before_script:
- - apt update && apt install git-core mysql-client npm -y
  - cd $CI_PROJECT_DIR/..
  - curl -sS https://getcomposer.org/installer | php
  - mv composer.phar /usr/local/bin/composer
